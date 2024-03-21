@@ -1,0 +1,44 @@
+{
+  "name": "repudiandaedicta",
+  "version": "1.0.0",
+  "description": "rc4 es6",
+  "main": "./index.js",
+  "scripts": {
+    "prepublish": "npm test",
+    "release": "npm run build; npm run build:copy-files-ts; npm publish ./dist",
+    "build": "rm -rf ./dist; tsc;",
+    "build:copy-files-ts": "NODE_ENV=production node ./scripts/copy-files-ts.js",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CrystelArmstrong/repudiandaedicta.git"
+  },
+  "keywords": [
+    "deserunt",
+    "enim",
+    "amet"
+  ],
+  "devDependencies": {
+    "@types/jest": "24.0.13",
+    "@types/node": "12.0.2",
+    "@typescript-eslint/eslint-plugin": "^1.9.0",
+    "@typescript-eslint/parser": "^1.9.0",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-react-app": "^4.0.1",
+    "eslint-loader": "2.1.2",
+    "eslint-plugin-flowtype": "2.50.1",
+    "eslint-plugin-import": "2.16.0",
+    "eslint-plugin-jsx-a11y": "6.2.1",
+    "eslint-plugin-react": "7.12.4",
+    "eslint-plugin-react-hooks": "^1.5.0",
+    "fs-extra": "^8.0.1",
+    "jest": "24.7.1",
+    "ts-jest": "^24.0.2",
+    "typescript": "^3.5.1"
+  },
+  "author": "AileenFerry",
+  "license": "MIT",
+  "homepage": "https://github.com/CrystelArmstrong/repudiandaedicta.git"
+}
